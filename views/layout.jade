@@ -1,17 +1,17 @@
 doctype html
 html
   head
-    title = appTitle
-    script(type="text/javascript", src="js/jquery-2.1.4.min.js")
-    link(rel="stylesheet" href="css/bootstrap.css")
+    title= title
+    script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
+    link(rel="stylesheet" href="../css/bootstrap.css")
   body
     #wrap
       .container
-        h1.page-header= appTitle
+        h1.page-header= title
         p.lead  Welcome to Healt Center Experience
       block page
       block header
-      block alert
+      block content
     block footer
       footer
         .container
