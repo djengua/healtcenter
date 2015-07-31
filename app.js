@@ -20,5 +20,5 @@ app.get('/platforms', function(req, res){
     platforms: platforms
   });
 });*/
-app.listen(3000);
+app.listen(8080);
 console.log('Express server listening on port 3000');
