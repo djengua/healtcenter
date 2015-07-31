@@ -1,4 +1,19 @@
-footer {
+
+.not_visible {
+  visibility: hidden;
+}
+.uppercase {
+  text-transform: uppercase !important;
+}
+.centered {
+  text-align: center !important;
+}
+
+.lead {
+  font-size: 17px;
+  font-weight: normal;
+}
+/*footer {
   background-color: #232323;
   color: #ffffff;
   -webkit-transition: all 300ms ease-in-out;
@@ -8,7 +23,8 @@ footer {
   padding-top: 55px;
   padding-bottom: 25px;
   position: relative;
-}
+}*/
+
 footer a:link,
 footer a:visited {
   color: #f8eb80;
@@ -19,7 +35,7 @@ footer a:active {
 }
 .copyright {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     position: relative;
 }
 
