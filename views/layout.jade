@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title = appTitle
+    script(type="text/javascript", src="js/jquery-2.1.4.min.js")
+    link(rel="stylesheet" href="css/bootstrap.css")
+  body
+    #wrap
+      .container
+        h1.page-header= appTitle
+        p.lead  Welcome to Healt Center Experience
+      block page
+      block header
+      block alert
+    block footer
+      footer
+        .container
+          p
+            | Copyright &copy; 2014 | Issues? Submit to
+            a(href="http://twitter.com/dav_vd") @dav_vd
+            | .
