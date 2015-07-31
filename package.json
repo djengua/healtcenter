@@ -1,0 +1,28 @@
+{
+  "name": "healtcenter",
+  "version": "1.0.0",
+  "description": "test portal healt center",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djengua/healtcenter.git"
+  },
+  "keywords": [
+    "healtcenter",
+    "nodejs",
+    "jade"
+  ],
+  "author": "djengua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djengua/healtcenter/issues"
+  },
+  "homepage": "https://github.com/djengua/healtcenter#readme"
+}
