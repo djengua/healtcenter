@@ -2,7 +2,7 @@
   "name": "healtcenter",
   "version": "1.0.0",
   "description": "test portal healt center",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "express": "^4.13.1",
     "jade": "^1.11.0"
