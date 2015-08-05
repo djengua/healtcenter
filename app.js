@@ -19,6 +19,11 @@ app.get('/about-us.html', function(req, res){
     title: 'About Us'
   });
 });
+
+
+app.get('/contact.html', function(req, res){
+  res.render('contact.jade');
+});
 /*
 app.get('/platforms', function(req, res){
   res.render('platforms', {

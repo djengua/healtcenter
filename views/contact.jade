@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .container
+    div.row
+      div.col-md-12
+        | &nbsp;
+  .container
+    div.row
+      div.col-md-8.col-md-offset-4.section_header.thin
+        h2 Contacto
+        div.subtitle.body-bg_section
+          div.container
+            p.uppercase Dejanos tus comentarios y e-mail y nos pondremos en contacto contigo.
+  .container
+    div.row
+      div.col-md-8.col-md-offset-4
+        div.input-group
+          span Nombre:
+          input(id="txtnombre").form-control
+        div.input-group
+          span Email:
+          input(id="txtemail").form-control
+        div.input-group
+          span Comentarios:
+          textarea(rows="3" id="txtcoments").form-control
+
+    div.row
+      div.col-md-8.col-md-offset-4
+        div.input-group
+          button(type="submit").btn.btn-default Enviar
