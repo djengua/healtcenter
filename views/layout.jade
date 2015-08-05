@@ -6,13 +6,38 @@ html
     link(rel="stylesheet" href="../css/bootstrap.css")
     link(rel="stylesheet" href="../css/custom.css")
   body
+    block header
+      div.header
+        div.mainbar.gradient.diagonal
+          div.container
+            div.logo
+              a(href="./images/medicus-header-logo-x64.png", alt="logo")
+              p(class="animated slideInLeft") Call us Toll free +30 1234-567-890
+            div.menu_container
+              nav
+                ul(class="menu main_menu hover_menu")
+                  li(class="active")
+                    a(title="Home", href="./index.html") HOME
+                  li
+                    a(title="ABOUT US", href="./about-us.html") ABOUT US
+                  li
+                    a(title="SERVICES", href="./services.html") SERVICES
+                  li
+                    a(title="HEALTH PLANS", href="./health-plans.html") HEALTH PLANS
+                  li
+                    a(title="News", href="./blog.html") NEWS
+                  li
+                    a(title="CONTACT", href="./contact.html") CONTACT
+                  li.lihasdropdown.two-column.drop-left
+                    a(title="more" href="#") More
+
     #wrap
       .container
         h1.page-header= title
         p.lead  Welcome to Healt Center Experience
       block page
-      block header
-      block content
+
+    block content
     block footer
       footer
         .container
