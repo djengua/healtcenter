@@ -313,6 +313,263 @@ body.sticky_header .header {
 }
 
 
+.section_header {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 35px 0;
+  position: relative;
+}
+.section_header img {
+  margin: 24px 0 20px 0;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.section_header small {
+  display: block;
+}
+.section_header .btn {
+  margin-top: 10px;
+}
+.section_header.centered {
+  text-align: center;
+}
+.section_header.xbold h2,
+.section_header.xbold h3,
+.section_header.xbold h4,
+.section_header.xbold h5,
+.section_header.xbold h6 {
+  font-weight: 900;
+  margin: 0 0 3px 0;
+}
+.section_header.xbold p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+.section_header.fancy h2 {
+  font-size: 68px;
+  margin: 0!important;
+}
+.section_header.fancy h3 {
+  font-size: 50px;
+}
+.section_header.fancy h4 {
+  font-size: 38px;
+}
+.section_header.fancy h5 {
+  font-size: 32px;
+}
+.section_header.fancy h6 {
+  font-size: 28px;
+}
+.section_header.fancy h2,
+.section_header.fancy h3,
+.section_header.fancy h4,
+.section_header.fancy h5,
+.section_header.fancy h6 {
+  font-weight: 900;
+  margin: 0 0 3px 0;
+}
+.section_header.fancy p {
+  font-size: 20px;
+  line-height: 1.4em;
+}
+.section_header.thin h2 {
+  font-size: 42px;
+  margin: 0!important;
+}
+.section_header.thin h3 {
+  font-size: 31px;
+}
+.section_header.thin h4 {
+  font-size: 23px;
+}
+.section_header.thin h5 {
+  font-size: 20px;
+}
+.section_header.thin h6 {
+  font-size: 17px;
+}
+.section_header.thin h2,
+.section_header.thin h3,
+.section_header.thin h4,
+.section_header.thin h5,
+.section_header.thin h6 {
+  font-weight: 300;
+  margin: 0 0 3px 0;
+}
+.section_header.thin p {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+.section_header.elegant h2 {
+  font-size: 51px;
+}
+.section_header.elegant h3 {
+  font-size: 37px;
+}
+.section_header.elegant h4 {
+  font-size: 28px;
+}
+.section_header.elegant h5 {
+  font-size: 24px;
+}
+.section_header.elegant h6 {
+  font-size: 21px;
+}
+.section_header.elegant h2,
+.section_header.elegant h3,
+.section_header.elegant h4,
+.section_header.elegant h5,
+.section_header.elegant h6 {
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+.section_header.elegant p {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+/*
+.secondary_section,
+.main .secondary_section,
+div[class*="_section"] .secondary_section,
+section[class*="_section"] .secondary_section,
+section[class*="_section"] div[class*="_section"] .secondary_section {
+  background-color: #304770;
+  color: #ffffff;
+}
+.secondary_section a:link,
+.main .secondary_section a:link,
+div[class*="_section"] .secondary_section a:link,
+section[class*="_section"] .secondary_section a:link,
+section[class*="_section"] div[class*="_section"] .secondary_section a:link,
+.secondary_section a:visited,
+.main .secondary_section a:visited,
+div[class*="_section"] .secondary_section a:visited,
+section[class*="_section"] .secondary_section a:visited,
+section[class*="_section"] div[class*="_section"] .secondary_section a:visited {
+  color: yellow;
+}
+.secondary_section a:hover,
+.main .secondary_section a:hover,
+div[class*="_section"] .secondary_section a:hover,
+section[class*="_section"] .secondary_section a:hover,
+section[class*="_section"] div[class*="_section"] .secondary_section a:hover,
+.secondary_section a:active,
+.main .secondary_section a:active,
+div[class*="_section"] .secondary_section a:active,
+section[class*="_section"] .secondary_section a:active,
+section[class*="_section"] div[class*="_section"] .secondary_section a:active {
+  color: #b2b300;
+}
+.secondary_section a i,
+.main .secondary_section a i,
+div[class*="_section"] .secondary_section a i,
+section[class*="_section"] .secondary_section a i,
+section[class*="_section"] div[class*="_section"] .secondary_section a i {
+  color: #ffffff;
+}*/
+
+.head_panel {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+.head_panel .owl-carousel .item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head_panel .owl-carousel .item:before {
+  -webkit-backface-visibility: hidden;
+}
+.head_panel .owl-carousel .item .container {
+  height: 100%;
+  position: relative;
+  min-height: inherit;
+}
+.head_panel .owl-carousel .owl-nav {
+  height: 0px;
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+}
+.head_panel .owl-carousel .owl-prev,
+.head_panel .owl-carousel .owl-next {
+  position: absolute;
+  width: 44px;
+  height: 50px;
+  display: block;
+  -o-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: url(../images/slider-arrows.png) 0 0 no-repeat;
+  margin: 0;
+  opacity: .3;
+}
+.head_panel .owl-carousel .owl-prev:hover,
+.head_panel .owl-carousel .owl-next:hover {
+  opacity: 1;
+  background: url(../images/slider-arrows.png) 0 0 no-repeat transparent;
+}
+.head_panel .owl-carousel .owl-prev {
+  background-position: 0 0;
+  left: 0;
+  top: 0;
+  text-indent: -2000px;
+}
+.head_panel .owl-carousel .owl-next {
+  background-position: -44px 0;
+  top: 0;
+  right: 0;
+  text-indent: 2000px;
+}
+.head_panel .owl-carousel .owl-next:hover {
+  background-position: -44px 0;
+}
+.head_panel .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.head_panel .slider_wrapper .caption {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  -o-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 50%;
+}
+.head_panel .slider_wrapper .caption.caption-full {
+  width: 80%;
+  left: 10%;
+}
+.head_panel .slider_wrapper .caption.caption-left {
+  left: 0px;
+  right: inherit;
+  text-align: left;
+}
+.head_panel .slider_wrapper .caption.caption-right {
+  right: 0;
+  left: inherit;
+  text-align: left;
+}
 
 
 

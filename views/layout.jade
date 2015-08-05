@@ -11,13 +11,13 @@ html
         div.mainbar.gradient.diagonal
           div.container
             div.logo
-              a(href="./images/medicus-header-logo-x64.png", alt="logo")
+              a(href="./static/images/medicus-header-logo-x64.png", alt="logo")
               p(class="animated slideInLeft") Call us Toll free +30 1234-567-890
             div.menu_container
               nav
                 ul(class="menu main_menu hover_menu")
                   li(class="active")
-                    a(title="Home", href="./index.html") HOME
+                    a(title="Home", href="./") HOME
                   li
                     a(title="ABOUT US", href="./about-us.html") ABOUT US
                   li
@@ -29,15 +29,9 @@ html
                   li
                     a(title="CONTACT", href="./contact.html") CONTACT
                   li.lihasdropdown.two-column.drop-left
-                    a(title="more" href="#") More
-
-    #wrap
-      .container
-        h1.page-header= title
-        p.lead  Welcome to Healt Center Experience
-      block page
-
+                    a(title="more", href="#") More
     block content
+
     block footer
       footer
         .container
