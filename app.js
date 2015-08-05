@@ -3,7 +3,7 @@ var express = require('express'),
   app = express();
 
 app.engine('html', require('jade').__express);
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 9027);
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
