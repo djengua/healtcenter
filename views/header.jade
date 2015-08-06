@@ -1,18 +1,20 @@
 extends layout
 
 block content
-  .container
-    div.row
-      div.col-md-12.section_header.thin
-        h2= title
-        div.subtitle.body-bg_section
-          div.container
-            p.uppercase We are a medical clinic
-    div.row
-      p
-        | Our team strives to achieve excellence in every aspect of the production process, from the preliminary hand-drawn sketches to the aftersales support. We carefully design our themes to be easy and flexible while making sure that most FAQ of our customers can be answered by our detailed documentation.
-        | We focus on using the latest web standards and practices regarding UX guidelines and WordPress theme development and strongly encourage our customers to follow us on this. The use of a child theme and the plugin-based development of ©Plethora Framework ensure hassle-free updates and peace of mind.
-        | Personalized patient care is what sets California Pacific Medical Center apart. When you visit one of our four San Francisco campus locations you can expect to receive world class care. Expert physician specialists and caring clinical staff provide you with an exceptional health care experiene.
+
+  section(id="about").bg-primary
+    div.container
+      div.row
+        div.col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading= title
+          hr.light
+          div.row
+            p
+              | Our team strives to achieve excellence in every aspect of the production process, from the preliminary hand-drawn sketches to the aftersales support. We carefully design our themes to be easy and flexible while making sure that most FAQ of our customers can be answered by our detailed documentation.
+              | We focus on using the latest web standards and practices regarding UX guidelines and WordPress theme development and strongly encourage our customers to follow us on this. The use of a child theme and the plugin-based development of ©Plethora Framework ensure hassle-free updates and peace of mind.
+              | Personalized patient care is what sets California Pacific Medical Center apart. When you visit one of our four San Francisco campus locations you can expect to receive world class care. Expert physician specialists and caring clinical staff provide you with an exceptional health care experiene.
+      div.row
+        | &nbsp;
   .container
     div.row
       div.col-md-12.section_header.thin

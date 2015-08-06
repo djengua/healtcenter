@@ -3,41 +3,47 @@ html
   head
     title= title
     script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
+    script(type="text/javascript", src="../js/creative.js")
+    script(type="text/javascript", src="../js/wow.js")
     link(rel="stylesheet" href="../css/bootstrap.css")
     link(rel="stylesheet" href="../css/custom.css")
   body
-    block header
-      div.header
-        div.mainbar.gradient.diagonal
-          div.container
-            div.logo
-              img(alt="logo", src="images/medicus-header-logo-x64.png")
-              p(class="animated slideInLeft") Call us Toll free +30 1234-567-890
-            div.menu_container
-              nav
-                ul(class="menu main_menu hover_menu")
-                  li(class="active")
-                    a(title="Home", href="./") HOME
-                  li
-                    a(title="ABOUT US", href="./about-us.html") ABOUT US
-                  li
-                    a(title="SERVICES", href="./services.html") SERVICES
-                  li
-                    a(title="HEALTH PLANS", href="./health-plans.html") HEALTH PLANS
-                  li
-                    a(title="News", href="./blog.html") NEWS
-                  li
-                    a(title="CONTACT", href="./contact.html") CONTACT
-                  li.lihasdropdown.two-column.drop-left
-                    a(title="more", href="#") More
+    nav(id="mainNav").navbar.navbar-default.navbar-fixed-top
+        div.container-fluid
+            div.navbar-header
+                button(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1").navbar-toggle.collapsed
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a(href="./").navbar-brand.page-scroll
+                  | Healt Center
+            div(id="bs-example-navbar-collapse-1").collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li
+                      a(href="./about-us.html").page-scroll About
+                    li
+                      a(href="#services").page-scroll Services
+                    li
+                      a(href="#portfolio").page-scroll Portfolio
+                    li
+                      a(href="./contact.html").page-scroll Contact
     block content
 
-    block footer
-      footer
-        .container
-          div.copyright.secondary_section
-            div.col-sd-6.col-md-6
-              | Copyright &copy; 2015
-            div.col-sd-6.col-md-6.text-right
-              | Issues? Submit to&nbsp;
-              a(href="http://twitter.com/dav_vd") @dav_vd
+
+
+
+    section(id="contact")
+      div.container
+        div.row
+          div.col-lg-8.col-lg-offset-2.text-center
+             h2.section-heading Let's Get In Touch!
+             hr.primary
+             p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
+          div.col-lg-4.col-lg-offset-2.text-center
+            i.fa.fa-phone.fa-3x.wow.bounceIn
+            p 123-456-6789
+          div.col-lg-4.text-center
+            i(data-wow-delay=".1s").fa.fa-envelope-o.fa-3x.wow.bounceIn
+            p
+             a(href="mailto:your-email@your-domain.com") feedback@startbootstrap.com
