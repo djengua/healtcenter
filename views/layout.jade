@@ -2,48 +2,77 @@ doctype html
 html
   head
     title= title
-    script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
-    script(type="text/javascript", src="../js/creative.js")
-    script(type="text/javascript", src="../js/wow.js")
-    link(rel="stylesheet" href="../css/bootstrap.css")
-    link(rel="stylesheet" href="../css/custom.css")
+    link(rel="stylesheet" href="../css/bootstrap.min.css")
+    link(rel="stylesheet" href="../css/style.css")
+    link(rel="stylesheet" href="../color/default.css")
+    link(rel="stylesheet" href="../css/animations.css")
+    link(rel="stylesheet" href="../font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="../css/nivo-lightbox.css")
+    link(rel="stylesheet" href="../css/nivo-lightbox-theme/default/default.css")
+
+
   body
-    nav(id="mainNav").navbar.navbar-default.navbar-fixed-top
-        div.container-fluid
-            div.navbar-header
-                button(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1").navbar-toggle.collapsed
-                    span.sr-only Toggle navigation
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                a(href="./").navbar-brand.page-scroll
-                  | Healt Center
-            div(id="bs-example-navbar-collapse-1").collapse.navbar-collapse
+    section(id="intro").hero
+      .container
+        .row
+          .col-md-12.text-right.navicon
+            a(id="nav-toggle" href="#").nav_slide_button
+        .row
+          div.col-md-8.col-md-offset-2.text-center.inner
+            div.animatedParent
+              h1.animated.fadeInDown Healt Center
+              p.animated.fadeInUp
+                | Udah dari dulu tahu kalo bocor kenapa nggak ditambal tong
+        .row
+          div.col-md-6.col-md-offset-3.text-center
+            a(href="#about").learn-more-btn.btn-scroll Learn more
+
+    div(id="navigation")
+      nav(role="navigation").navbar.navbar-custom
+        .container
+          .row
+            div.col-md-2
+              div.site-logo
+                a(href="./").brand Healt Center
+            div.col-md-10
+              div.navbar-header
+                button(type="button" data-toggle="collapse" data-target="#menu").navbar-toggle
+                  i.fa.fa-bars
+              div(id="menu").collapse.navbar-collapse
                 ul.nav.navbar-nav.navbar-right
-                    li
-                      a(href="./about-us.html").page-scroll About
-                    li
-                      a(href="#services").page-scroll Services
-                    li
-                      a(href="#portfolio").page-scroll Portfolio
-                    li
-                      a(href="./contact.html").page-scroll Contact
+                  li.active
+                    a(href="#intro") Home
+                  li
+                    a(href="#about") About Us
+                  li
+                    a(href="#service") Services
+                  li
+                    a(href="#works") Works
+                  li
+                    a(href="./contact.html") Contact
     block content
 
-
-
-
-    section(id="contact")
-      div.container
-        div.row
-          div.col-lg-8.col-lg-offset-2.text-center
-             h2.section-heading Let's Get In Touch!
-             hr.primary
-             p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
-          div.col-lg-4.col-lg-offset-2.text-center
-            i.fa.fa-phone.fa-3x.wow.bounceIn
-            p 123-456-6789
-          div.col-lg-4.text-center
-            i(data-wow-delay=".1s").fa.fa-envelope-o.fa-3x.wow.bounceIn
+    footer
+      .container
+        .row
+          div.col-md-6
+            ul.footer-menu
+              li
+                a(href="#") Home
+              li
+                a(href="#") Press release
+          div.col-md-6.text-right
             p
-             a(href="mailto:your-email@your-domain.com") feedback@startbootstrap.com
+              | &copy;Copyright 2015 - Heal Center. Designed by
+              a(href="http://bootstraptaste.com">Bootstraptaste)
+
+
+    script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
+    script(src="../js/jquery.sticky.js")
+    script(src="../js/jquery.easing.min.js")
+    script(src="../js/jquery.scrollTo.js")
+    script(src="../js/jquery.appear.js")
+    script(src="../js/stellar.js")
+    script(src="../js/nivo-lightbox.min.js")
+    script(src="../js/custom.js")
+    script(src="../js/css3-animate-it.js")

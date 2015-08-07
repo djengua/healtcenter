@@ -1,23 +1,94 @@
 extends layout
 
 block content
-  header
-    div.header-content
-      div.header-content-inner
-        h1 Medicus is a "Health & Beauty" oriented HTML5 Template, built to serve as a foundation for your web projects.
-        hr
-        p The Design is based on fine typography and large photography. It is build with Twitter Bootstrap, the front-end development framework with a steep learning curve that changes the way you develop sites. Medicus lets you build your pages with a great collection of section layouts and helper classes that offer extreme flexibility and pixel-perfect design.
-        a(href="#about").btn. btn-primary.btn-xl.page-scroll Find Out More
 
+  section(id="about").home-section.color-dark.bg-white
+    .container.marginbot-50
+      .row
+        .col-lg-8.col-lg-offset-2
+          .animatedParent
+            .section-heading.text-center.animated.bounceInDown
+              h2.h-bold
+                | About our bocor team
+              div.divider-header
 
-  section(id="about").bg-primary
-    div.container
-      div.row
-        div.col-lg-8.col-lg-offset-2.text-center
-          h2.section-heading We've got what you need!
-          hr.light
-          p.text-faded
-            | Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-          a(href="#").btn.btn-default.btn-xl Get Started!
-      div.row
-        | &nbsp;
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.animatedParent
+          .text-center
+            p
+              | Lorem ipsum dolor sit amet, vis tale malis tacimates et, graece doctus omnesque ne est, deserunt pertinacia ne nam. Pro eu simul affert referrentur, natum mutat erroribus te his
+            p
+              | Ne mundi fabulas corrumpit vim, nulla vivendum conceptam eu nam. Ius ex principes complectitur, ex quo duis suscipit. Ius fastidii reprimique no. Sadipscing appellantur pri ad. Oratio moderatius definitiones cum ex, mea ne brute vivendum percipitur.
+            a(href="#service").btn.btn-skin.btn-scroll
+              | What we do
+
+  section(id="service").home-section.color-dark.bg-gray
+    .container.marginbot-50
+      .row
+        col-lg-8.col-lg-offset-2
+          .section-heading.text-center
+            h2.h-bold What we can do for you
+            div.divider-header
+
+    div.text-center
+      .container
+        div.row.animatedParent
+          div.col-xs-6.col-sm-4.col-md-4
+            div.animated.rotateInDownLeft
+              div.service-box
+                div.service-icon
+                  div.fa.fa-laptop.fa-2x
+                div.service-desc
+                  h5 Web Design
+                  div.divider-header
+                    p
+                      | Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                      a(href="#").btn.btn-skin Learn more
+          div.col-xs-6.col-sm-4.col-md-4
+            div.animated.rotateInDownLeft.slow
+              div.service-box
+                div.service-icon
+                  span.fa.fa-camera.fa-2x
+                div.service-desc
+                  h5 Photography
+                  div.divider-header
+                  p
+                    | Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                  a(href="#").btn.btn-skin Learn more
+          div.col-xs-6.col-sm-4.col-md-4
+            div.animated.rotateInDownLeft.slower
+              div.service-box
+                div.service-icon
+                  span.fa.fa-code.fa-2x
+                div.service-desc
+                  h5 Graphic design
+                  div.divider-header
+                  p
+                    | Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+                  a(href="#").btn.btn-skin Learn more
+
+    section(id="works").home-section.color-dark.text-center.bg-white
+      div.container.marginbot-50
+        div.row
+          div.col-lg-8.col-lg-offset-2
+            div.animatedParent
+              div.section-heading.text-center
+                h2.h-bold.animated.bounceInDown What we have done
+                  div.divider-header
+      div.container
+        div.row.animatedParent
+          div.col-sm-12.col-md-12.col-lg-12
+            div.row.gallery-item
+              div.col-md-3.animated.fadeInUp
+                a(href="images/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+                  img(src="images/works/1.jpg" alt="img").img-responsive
+              div.col-md-3.animated.fadeInUp.slow
+                a(href="images/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+                  img(src="images/works/2.jpg" alt="img").img-responsive
+              div.col-md-3.animated.fadeInUp.slower
+                a(href="images/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+                  img(src="images/works/3.jpg" alt="img").img-responsive
+              div.col-md-3.animated.fadeInUp
+                a(href="images/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+                  img(src="images/works/4.jpg" alt="img").img-responsive
