@@ -1,0 +1,134 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet" href="../css/bootstrap.min.css")
+    link(rel="stylesheet" href="../css/admin.css")
+
+
+
+  body
+
+
+
+nav.navbar.navbar-default.navbar-static-top
+  .container-fluid
+    .navbar-header
+      button(type="button").navbar-toggle.navbar-toggle-sidebar.collapsed
+        | MENU
+      button(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1").navbar-toggle.collapsed
+        span.sr-only
+          | Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a(href="#").navbar-brand
+        | Administrator
+
+    div(id="bs-example-navbar-collapse-1").collapse.navbar-collapse
+      form(method="GET" role="search").navbar-form.navbar-left
+        .form-group
+          input(type="text" name="q" placeholder="Search").form-control
+        button(type="submit").btn.btn-default
+          i.glyphicon.glyphicon-search
+
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href="http://www.pingpong-labs.com" target="_blank") Visit Site
+        li.dropdown
+          a(href="#" data-toggle="dropdown" role="button" aria-expanded="false").dropdown-toggle
+            | Account
+            span.caret
+            ul(role="menu").dropdown-menu
+              li.dropdown-header SETTINGS
+              li
+                a(href="#") Other Link
+              li
+                a(href="#") Other Link
+              li
+                a(href="#") Other Link
+              li.divider
+              li
+                a(href="#") Logout
+
+div.container-fluid.main-container
+  div.col-md-2.sidebar
+    .row
+      .absolute-wrapper
+
+      .side-menu
+        nav(role="navigation").navbar.navbar-default
+          side-menu-container
+            ul.nav.navbar-nav
+              li.active
+                a(href="#")
+                  span.glyphicon.glyphicon-dashboard
+                  | Dashboard
+              li
+                a(href="#")
+                  span.glyphicon.glyphicon-plane
+                  | Active Link
+              li
+                a(href="#")
+                  span.glyphicon.glyphicon-cloud
+                  | Link
+
+              li(id="dropdown").panel.panel-default
+                a(data-toggle="collapse" href="#dropdown-lvl1" aria-expanded="true")
+                  span.glyphicon.glyphicon-user
+                  | Sub Level
+                  span.caret
+
+                div(id="dropdown-lvl1" aria-expanded="true").panel-collapse.collapse.in
+                  .panel-body
+                    ul.nav.navbar-nav
+                      li
+                        a(href="#") Link
+                      li
+                        a(href="#") Link
+                      li
+                        a(href="#") Link
+
+                      li(id="dropdown").panel.panel-default
+                        a(data-toggle="collapse" href="#dropdown-lvl2")
+                          span.glyphicon.glyphicon-off
+                          | Sub Level
+                          span.caret
+                        div(id="dropdown-lvl2").panel-collapse.collapse
+                          .panel-body
+                            ul.nav.navbar-nav
+                              li
+                                a(href="#") Link
+                              li
+                                a(href="#") Link
+                              li
+                                a(href="#") Link
+
+              li
+                a(href="#")
+                  span.glyphicon.glyphicon-signal
+                  | Link
+
+
+  .content.col-md-10
+    .panel.panel-default
+      .panel-heading
+        | Dashboard
+        .panel-body
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+footer.pull-left.footer
+  p.col-md-12
+    hr.divider
+    Copyright &COPY; 2015
+    a(href="http://www.pingpong-labs.com")
+      | Gravitano
+
+
+script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
+script(type="text/javascript", src="../js/dropdown.js")

@@ -31,6 +31,10 @@ app.get('/contact.html', function(req, res){
 app.get('/dashboard.html', function(req, res){
   res.render('dashboard.jade');
 });
+
+app.get('/usuarios.html', function(req, res){
+  res.render('usuarios.jade');
+});
 /*
 app.get('/platforms', function(req, res){
   res.render('platforms', {
