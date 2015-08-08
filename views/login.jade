@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet" href="../css/bootstrap.min.css")
+    link(rel="stylesheet" href="../css/style.css")
+    link(rel="stylesheet" href="../color/default.css")
+    link(rel="stylesheet" href="../css/animations.css")
+    link(rel="stylesheet" href="../font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="../css/nivo-lightbox.css")
+    link(rel="stylesheet" href="../css/nivo-lightbox-theme/default/default.css")
+
+
+  body
+
+    section(id="about").home-section.color-dark.bg-white
+      .container.marginbot-50
+        .row
+          .col-lg-8.col-lg-offset-2
+            .animatedParent
+              .section-heading.text-center.animated.bounceInDown
+                h2.h-bold
+                  | Acerca de nuestro equipo
+                div.divider-header
+
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.animatedParent
+            form.form-horizontal
+              .form-group
+                label(for="inputEmail").control-label.col-xs-2 Email
+                .col-xs-10
+                  input(type="email" id="inputEmail" placeholder="Email").form-control
+              .form-group
+                label(for="inputPassword").control-label.col-xs-2 Password
+                .col-xs-10
+                  input(type="password" id="inputPassword" placeholder="Password").form-control
+              .form-group
+                div.col-xs-offset-2.col-xs-10
+                  div.checkbox
+                    label
+              .form-group
+                div.col-xs-offset-2.col-xs-10
+                  a(href="./dashboard.html").btn.btn-skin
+                    | Login

@@ -20,9 +20,16 @@ app.get('/about-us.html', function(req, res){
   });
 });
 
+app.get('/login.html', function(req, res){
+  res.render('login.jade');
+});
 
 app.get('/contact.html', function(req, res){
   res.render('contact.jade');
+});
+
+app.get('/dashboard.html', function(req, res){
+  res.render('dashboard.jade');
 });
 /*
 app.get('/platforms', function(req, res){

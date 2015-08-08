@@ -12,21 +12,6 @@ html
 
 
   body
-    section(id="intro").hero
-      .container
-        .row
-          .col-md-12.text-right.navicon
-            a(id="nav-toggle" href="#").nav_slide_button
-        .row
-          div.col-md-8.col-md-offset-2.text-center.inner
-            div.animatedParent
-              h1.animated.fadeInDown Healt Center
-              p.animated.fadeInUp
-                | Udah dari dulu tahu kalo bocor kenapa nggak ditambal tong
-        .row
-          div.col-md-6.col-md-offset-3.text-center
-            a(href="#about").learn-more-btn.btn-scroll Learn more
-
     div(id="navigation")
       nav(role="navigation").navbar.navbar-custom
         .container
@@ -43,15 +28,14 @@ html
                   li.active
                     a(href="#intro") Home
                   li
-                    a(href="#about") Acerca de nosotros
+                    a(href="#about") Usuarios
                   li
-                    a(href="#service") Servicios
+                    a(href="#service") Catalogos
                   li
-                    a(href="#works") Trabajos
+                    a(href="#works") Herramientas
                   li
-                    a(href="./contact.html") Contacto
-                  li
-                    a(href="./login.html") Login
+                    a(href="./contact.html") Logout
+
     block content
 
     footer
@@ -60,21 +44,20 @@ html
           div.col-md-6
             ul.footer-menu
               li
-                a(href="#") Inicio
+                a(href="#") Home
               li
-                a(href="#") Proximas Liberaciones
+                a(href="#") Press release
           div.col-md-6.text-right
             p
-              | &copy;Copyright 2015 - Healt Center. Dise&ntilde;ado por
+              | &copy;Copyright 2015 - Heal Center. Designed by
               a(href="http://bootstraptaste.com">Bootstraptaste)
 
-
-    script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
-    script(src="../js/jquery.sticky.js")
-    script(src="../js/jquery.easing.min.js")
-    script(src="../js/jquery.scrollTo.js")
-    script(src="../js/jquery.appear.js")
-    script(src="../js/stellar.js")
-    script(src="../js/nivo-lightbox.min.js")
-    script(src="../js/custom.js")
-    script(src="../js/css3-animate-it.js")
+script(type="text/javascript", src="../js/jquery-2.1.4.min.js")
+script(src="../js/jquery.sticky.js")
+script(src="../js/jquery.easing.min.js")
+script(src="../js/jquery.scrollTo.js")
+script(src="../js/jquery.appear.js")
+script(src="../js/stellar.js")
+script(src="../js/nivo-lightbox.min.js")
+script(src="../js/custom.js")
+script(src="../js/css3-animate-it.js")
