@@ -26,20 +26,23 @@ html
       .container
         .row
           .col-lg-8.col-lg-offset-2.animatedParent
-            form.form-horizontal
+            form(action="/login" method="POST").form-horizontal
               .form-group
                 label(for="inputEmail").control-label.col-xs-2 Email
                 .col-xs-10
-                  input(type="email" id="inputEmail" placeholder="Email").form-control
+                  input(name="email", type="email", id="inputEmail", placeholder="Email").form-control
               .form-group
                 label(for="inputPassword").control-label.col-xs-2 Password
                 .col-xs-10
-                  input(type="password" id="inputPassword" placeholder="Password").form-control
+                  input(name="password", type="password", id="inputPassword", placeholder="Password").form-control
               .form-group
                 div.col-xs-offset-2.col-xs-10
                   div.checkbox
                     label
               .form-group
                 div.col-xs-offset-2.col-xs-10
-                  a(href="./dashboard.html").btn.btn-skin
+                  button(type="submit").btn.btn-skin
                     | Login
+        .row
+          .col-lg-8.col-lg-offset-2
+            div= error

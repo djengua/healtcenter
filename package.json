@@ -4,14 +4,21 @@
   "description": "test portal healt center",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.13.3",
+    "cookie-parser": "^1.3.5",
+    "errorhandler": "^1.4.2",
     "express": "^4.13.1",
+    "express-session": "^1.11.3",
     "jade": "^1.11.0",
-    "less": "^2.5.1"
+    "less": "^2.5.1",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "stylus": "^0.52.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start":"node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"    
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
