@@ -333,6 +333,14 @@ hr.bold {
     z-index:120;
 }
 
+.dashboard-section {
+    padding-top: 50px;
+    padding-bottom: 110px;
+	display:block;
+    position:relative;
+    z-index:120;
+}
+
 .inner-section {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -343,6 +351,9 @@ hr.bold {
     padding-bottom: 0;
 }
 
+.dashboard-section.nopadd-bot {
+    padding-bottom: 0;
+}
 
 .section-heading h2 {
 	font-size: 24px;

@@ -51,12 +51,15 @@ if ('development' == app.get('env')) {
 }
 
 // Pages & routes
-app.get('/', routes.index);
-app.get('/login', routes.user.login);
+app.get('/', routes.index);// pagina principal y define el user
+// Paginas y rutas  de login
+app.get('/login', routes.user.login); //llama al metodo login dentro de users.js
 app.post('/login', routes.user.authenticate);
+app.get('/logout', routes.user.logout); //expone el methodo logout
+
 app.get('/dashboard', function(req, res){res.render('dashboard');})
-/*app.get('/logout', routes.user.logout);
-app.get('/admin', authorize, routes.article.admin);
+
+/*app.get('/admin', authorize, routes.article.admin);
 app.get('/post', authorize, routes.article.post);
 app.post('/post', authorize, routes.article.postArticle);
 app.get('/articles/:slug', routes.article.show);
