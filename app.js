@@ -13,10 +13,8 @@ var express = require('express'),
     methodOverride = require('method-override');
 
 // Variables locales
-app.locals.appTitle = 'Healt Center';
-app.locals.twitter = '@dav_vd';
-
-
+//app.locals.appTitle = 'Healt Center';
+//app.locals.twitter = '@dav_vd';
 
 app.engine('html', require('jade').__express);
 // Configuraciones de express.js
@@ -28,8 +26,8 @@ app.use(express.static(path.join(__dirname, 'public'))); //se indica la carpeta 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-app.use(cookieParser('3CCC4ACD-6ED1-4844-9217-82131BDCB239'));
-app.use(session({secret: '2C44774A-D649-4D44-9535-46E296EF984F'}));
+//app.use(cookieParser('3CCC4ACD-6ED1-4844-9217-82131BDCB239'));
+//app.use(session({secret: '2C44774A-D649-4D44-9535-46E296EF984F'}));
 app.use(methodOverride());
 app.use(require('stylus').middleware(__dirname + '/public'));
 

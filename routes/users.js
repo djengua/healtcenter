@@ -20,8 +20,8 @@ exports.login = function(req, res, next) {
  */
 
 exports.logout = function(req, res, next) {
-  console.log('logout del usuario: ' + req.session.user.email);
-  req.session.destroy();
+  //console.log('logout del usuario: ' + req.session.user.email);
+  //req.session.destroy();
   res.redirect('/');
 };
 
@@ -41,8 +41,8 @@ exports.authenticate = function(req, res, next) {
   //}, function(error, user){
     //if (error) return next(error);
     //if (!user) return res.render('login', {error: "Incorrect email&password combination."});
-    req.session.user = {'email':"dav_vd@hotmail.com", 'name': 'dave'}; // user;
-    console.log(req.session.user);
+    //req.session.user = {'email':"dav_vd@hotmail.com", 'name': 'dave'}; // user;
+    //console.log(req.session.user);
     //req.session.admin = user.admin;
     res.redirect('/dashboard');
   //})
