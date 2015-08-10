@@ -3,7 +3,10 @@ var express = require('express'),
   path = require('path'),
   routes = require('./routes'),
   http = require('http'),
+  //pg = require('pg'),
   app = express();
+  var favicon = require('serve-favicon');
+
   // Express.js Middleware
   var session = require('express-session'),
     logger = require('morgan'),
@@ -21,15 +24,23 @@ app.engine('html', require('jade').__express);
 var port = process.env.PORT || 9027; //puerto que se va utilizar
 app.set('view engine', 'jade'); //se indica que se va usar jade
 app.set('views', path.join(__dirname, 'views')); //se indica el directorio de las vistas (jade)
+
 // Configuracion de middleware de Express.js
 app.use(express.static(path.join(__dirname, 'public'))); //se indica la carpeta public como un recurso statico para ver imagenes, css, y js
+//app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+//app.use(bodyParser.urlencoded());
 //app.use(cookieParser('3CCC4ACD-6ED1-4844-9217-82131BDCB239'));
 //app.use(session({secret: '2C44774A-D649-4D44-9535-46E296EF984F'}));
 app.use(methodOverride());
 app.use(require('stylus').middleware(__dirname + '/public'));
+
+// postgresql connection
+var conn = "postgres://djengua:Passw0rd!@localhost:5432/healtcenter";
+
+
+
 
 // Authentication middleware
 app.use(function(req, res, next) {
