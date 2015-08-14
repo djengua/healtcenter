@@ -1,6 +1,7 @@
 
 //exports.article = require('./article');
 exports.user = require('./users');
+exports.dashboard = require('./dashboard');
 
 /*
  * GET home page.

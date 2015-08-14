@@ -29,10 +29,10 @@ app.set('views', path.join(__dirname, 'views')); //se indica el directorio de la
 app.use(express.static(path.join(__dirname, 'public'))); //se indica la carpeta public como un recurso statico para ver imagenes, css, y js
 //app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(logger('dev'));
-app.use(bodyParser.json());
+app.use(bodyParser());
 //app.use(bodyParser.urlencoded());
-//app.use(cookieParser('3CCC4ACD-6ED1-4844-9217-82131BDCB239'));
-//app.use(session({secret: '2C44774A-D649-4D44-9535-46E296EF984F'}));
+app.use(cookieParser());
+app.use(session({secret: '2C44774A-D649-4D44-9535-46E296EF984F'}));
 app.use(methodOverride());
 app.use(require('stylus').middleware(__dirname + '/public'));
 
@@ -64,9 +64,9 @@ app.get('/', routes.index);// pagina principal y define el user
 // Paginas y rutas  de login
 app.get('/login', routes.user.login); //llama al metodo login dentro de users.js
 app.post('/login', routes.user.authenticate);
-app.get('/logout', routes.user.logout); //expone el methodo logout
 
-app.get('/dashboard', function(req, res){res.render('dashboard');})
+app.get('/logout', routes.user.logout); //expone el methodo logout
+app.get('/dashboard', routes.dashboard.default );
 
 /*app.get('/admin', authorize, routes.article.admin);
 app.get('/post', authorize, routes.article.post);
