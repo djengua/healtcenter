@@ -68,6 +68,8 @@ app.post('/login', routes.user.authenticate);
 app.get('/logout', routes.user.logout); //expone el methodo logout
 app.get('/dashboard', routes.dashboard.default );
 
+app.get('/users', routes.user.list);
+
 /*app.get('/admin', authorize, routes.article.admin);
 app.get('/post', authorize, routes.article.post);
 app.post('/post', authorize, routes.article.postArticle);

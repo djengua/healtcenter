@@ -1,4 +1,16 @@
 extends layoutAdmin
 
 block content
-  | AAAA
+  form(role="form").form-horizontal
+    .form-group
+      label(for="ejemplo_email_3").col-lg-2.control-label Email
+      .col-lg-6
+        input(type="email", id="ejemplo_email_3", placeholder="Email").form-control
+
+    .form-group
+      label(for="ejemplo_password_3").col-lg-2.control-label Contrase&ntilde;a
+      .col-lg-6
+        input(type="password" placeholder="Contraseña" id="ejemplo_password_3").form-control
+    .form-group
+      .col-lg-offset-2.col-lg-6
+        button(type="submit").btn.btn-default Entrar

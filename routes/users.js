@@ -1,9 +1,15 @@
+var ss  = require('./ChkSession');
+
 /*
  * GET users listing.
  */
 
 exports.list = function(req, res){
-  res.send("respond with a resource");
+  //res.send("respond with a resource");
+
+  ss.validateSession(req.session.user, res, 'usuarios');
+
+  //res.render('usuarios.jade');
 };
 
 
