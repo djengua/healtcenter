@@ -21,25 +21,156 @@ block content
             a.close-link
               i.fa.fa-close
         .clearfix
+      .x_content
+        form(role="form").form-horizontal
+          .form-group
+            label.col-lg-2.control-label Nombre(s)
+            .col-lg-6
+              input(type="text", id="ejemplo_email_3", placeholder="Nombre(s)").form-control
+          .form-group
+            label.col-lg-2.control-label Apellidos(s)
+            .col-lg-6
+              input(type="text", id="ejemplo_email_3", placeholder="Apellidos(s)").form-control
+          .form-group
+            label(for="ejemplo_email_3").col-lg-2.control-label Email
+            .col-lg-6
+              input(type="email", id="ejemplo_email_3", placeholder="Email").form-control
 
-      form(role="form").form-horizontal
-        .form-group
-          label.col-lg-2.control-label Nombre(s)
-          .col-lg-6
-            input(type="text", id="ejemplo_email_3", placeholder="Nombre(s)").form-control
-        .form-group
-          label.col-lg-2.control-label Apellidos(s)
-          .col-lg-6
-            input(type="text", id="ejemplo_email_3", placeholder="Apellidos(s)").form-control
-        .form-group
-          label(for="ejemplo_email_3").col-lg-2.control-label Email
-          .col-lg-6
-            input(type="email", id="ejemplo_email_3", placeholder="Email").form-control
+          .form-group
+            label(for="ejemplo_password_3").col-lg-2.control-label Contrase&ntilde;a
+            .col-lg-6
+              input(type="password" placeholder="Contraseña" id="ejemplo_password_3").form-control
+          .form-group
+            .col-lg-offset-2.col-lg-6
+              button(type="submit").btn.btn-default Guardar
 
-        .form-group
-          label(for="ejemplo_password_3").col-lg-2.control-label Contrase&ntilde;a
-          .col-lg-6
-            input(type="password" placeholder="Contraseña" id="ejemplo_password_3").form-control
-        .form-group
-          .col-lg-offset-2.col-lg-6
-            button(type="submit").btn.btn-default Guardar
+  .col-md-12.col-sm-12.col-xs-12
+    .x_panel
+      .x_title
+        h2 Usuarios
+        ul.nav.navbar-right.panel_toolbox
+          li
+            a.collapse-link
+              i.fa.fa-chevron-up
+          li.dropdown
+            a(href="#" data-toggle="dropdown" role="button" aria-expanded="false").dropdown-toggle
+              i.fa.fa-wrench
+            ul(role="menu").dropdown-menu
+              li
+                a(href="#") Settings 1
+              li
+                a(href="#") Settings 2
+          li
+            a.close-link
+              i.fa.fa-close
+        .clearfix
+
+      .x_content
+        p
+          | Add class
+          code bulk_action
+          |  to table for bulk actions options on row select
+
+        table.table.table-striped.responsive-utilities.jambo_table.bulk_action
+          thead
+            tr.headings
+              th
+                div(style="position: relative;").icheckbox_flat-green
+                  input(style="position: absolute; opacity: 0;" type="checkbox" id="check-all").flat
+                  ins(style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+              th.column-title Invoice
+              th.column-title Invoice Date
+              th.column-title Order
+              th.column-title Bill to Name
+              th.column-title Status
+              th.column-title Amount
+              th.column-title.no-link.last
+                span.nobr Action
+              th(colspan="7").bulk-actions
+                a(style="color:#fff; font-weight:500;").antoo
+                  | Bulk Actions (
+                  span.action-cnt )
+                  i.fa.fa-chevron-down
+          tbody
+            tr.even.pointer
+              td.a-center
+                div(style="position: relative;").icheckbox_flat-green
+                  input(type="checkbox" name="table_records" style="position: absolute; opacity: 0;").flat
+                  ins(style="position: absolu(te; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+              td 121000040
+              td May 23, 2014 11:47:56 PM
+              td 121000210
+                i.success.fa.fa-long-arrow-up
+              td John Blank L
+              td Paid
+              td.a-right.a-right $7.45
+              td.last
+                a(href="#") View
+            tr.odd.pointer
+              td.a-center
+                div(style="position: relative;").icheckbox_flat-green
+                  input(type="checkbox" name="table_records" style="position: absolute; opacity: 0;").flat
+                  ins(style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+              td 121000039
+              td May 23, 2014 11:30:12 PM
+              td 121000208
+                i.success.fa.fa-long-arrow-up
+              td John Blank L
+              td Paid
+              td.a-right.a-right $741.20
+              td.last
+                a(href="#") View
+            tr.even.pointer
+              td.a-center
+                div(style="position: relative;").icheckbox_flat-green
+                  input(type="checkbox" name="table_records" style="position: absolute; opacity: 0;").flat
+                  ins(style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+              td 121000038
+              td May 24, 2014 10:55:33 PM
+              td 121000203
+                i.success.fa.fa-long-arrow-up
+              td Mike Smith
+              td Paid
+              td.a-right.a-right $432.26
+              td.last
+                a(href="#") View
+            tr.odd.pointer
+              td.a-center
+                div(style="position: relative;").icheckbox_flat-green
+                  input(type="checkbox" name="table_records" style="position: absolute; opacity: 0;").flat
+                  ins(style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+              td 121000037
+              td May 24, 2014 10:52:44 PM
+              td 121000204
+              td Mike Smith
+              td Paid
+              td.a-right.a-right $333.21
+              td.last
+                a(href="#") View
+            tr.even.pointer
+                td.a-center
+                  div(style="position: relative;").icheckbox_flat-green
+                    input(type="checkbox" name="table_records" style="position: absolute; opacity: 0;").flat
+                    ins(style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+                td 121000040
+                td May 24, 2014 11:47:56 PM
+                td 121000210
+                td John Blank L
+                td Paid
+                td.a-right.a-right $7.45
+                td.last
+                  a(href="#") View
+            tr.odd.pointer
+              td.a-center
+                div(style="position: relative;").icheckbox_flat-green
+                  input(type="checkbox" name="table_records" style="position: absolute; opacity: 0;").flat
+                  ins(style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);").iCheck-helper
+              td 121000039
+              td May 26, 2014 11:30:12 PM
+              td 121000208
+                i.error.fa.fa-long-arrow-down
+              td John Blank L
+              td Paid
+              td.a-right.a-right $741.20
+              td.last
+                a(href="#") View
