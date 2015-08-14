@@ -39,8 +39,8 @@ exports.logout = function(req, res, next) {
 exports.authenticate = function(req, res, next) {
   if (!req.body.email || !req.body.password)
     return res.render('login', { error: "Por favor introduzca un email y password." });
-  if(req.body.email === "dav_vd@hotmail.com")
-  {
+  /*if(req.body.email === "dav_vd@hotmail.com")
+  {*/
     if(req.body.password === 'test')
     {
     //req.collections.users.findOne({
@@ -49,7 +49,7 @@ exports.authenticate = function(req, res, next) {
     //}, function(error, user){
       //if (error) return next(error);
       //if (!user) return res.render('login', {error: "Incorrect email&password combination."});
-      req.session.user = {'email':"dav_vd@hotmail.com", 'name': 'dave'}; // user;
+      req.session.user = {'email':req.body.email, 'name': 'dave'}; // user;
       //console.log(req.session.user);
       //req.session.admin = user.admin;
       res.redirect('/dashboard');
@@ -58,11 +58,11 @@ exports.authenticate = function(req, res, next) {
       return res.render('login', { error: "El password es incorrecto." });
     }
   //})
-  }
+  /*}
   else {
     res.render('login', {
       error: "El usuario no existe."
     });
 
-  }
+  }*/
 };

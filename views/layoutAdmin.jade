@@ -30,7 +30,7 @@ html
         .col-md-3.left_col
           .left_col.scroll-view
             div(style="border: 0;").navbar.nav_title
-              a(href="index.html").site_title
+              a(href="/dashboard").site_title
                 i.fa.fa-paw
                 span Healt Center
             .clearfix
@@ -84,7 +84,7 @@ html
                 span(aria-hidden="true").glyphicon.glyphicon-fullscreen
               a(data-toggle="tooltip" data-placement="top" title="Lock")
                 span(aria-hidden="true").glyphicon.glyphicon-eye-close
-              a(data-toggle="tooltip" data-placement="top" title="Logout")
+              a(data-toggle="tooltip" data-placement="top" title="Logout" href="/logout")
                 span(aria-hidden="true").glyphicon.glyphicon-off
 
         .top_nav
@@ -118,17 +118,15 @@ html
             block content
 
 
-            br/
-            br/
-            br/
-            br/
-
           footer
             div
               p.pull-right
                 | Gentelella Alela! a Bootstrap 3 template by
                 a(href="#") Kimlabs. |
                 span.lead
-                  i.fa.fa-paw
-                    | Gentelella Alela!
+                  | &nbsp; Healt Center
             .clearfix
+
+    script(src="../js/nicescroll/jquery.nicescroll.min.js")
+    script(src="../js/icheck/icheck.min.js")
+    script(src="../js/custom.js")

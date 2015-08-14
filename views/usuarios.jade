@@ -1,16 +1,45 @@
 extends layoutAdmin
 
 block content
-  form(role="form").form-horizontal
-    .form-group
-      label(for="ejemplo_email_3").col-lg-2.control-label Email
-      .col-lg-6
-        input(type="email", id="ejemplo_email_3", placeholder="Email").form-control
+  .col-md-12.col-sm-12.col-xs-12
+    .x_panel
+      .x_title
+        h2 Nuevo Usuario
+        ul.nav.navbar-right.panel_toolbox
+          li
+            a.collapse-link
+              i.fa.fa-chevron-up
+          li.dropdown
+            a(href="#" data-toggle="dropdown" role="button" aria-expanded="false").dropdown-toggle
+              i.fa.fa-wrench
+            ul(role="menu").dropdown-menu
+              li
+                a(href="#") Settings 1
+              li
+                a(href="#") Settings 2
+          li
+            a.close-link
+              i.fa.fa-close
+        .clearfix
 
-    .form-group
-      label(for="ejemplo_password_3").col-lg-2.control-label Contrase&ntilde;a
-      .col-lg-6
-        input(type="password" placeholder="Contraseña" id="ejemplo_password_3").form-control
-    .form-group
-      .col-lg-offset-2.col-lg-6
-        button(type="submit").btn.btn-default Entrar
+      form(role="form").form-horizontal
+        .form-group
+          label.col-lg-2.control-label Nombre(s)
+          .col-lg-6
+            input(type="text", id="ejemplo_email_3", placeholder="Nombre(s)").form-control
+        .form-group
+          label.col-lg-2.control-label Apellidos(s)
+          .col-lg-6
+            input(type="text", id="ejemplo_email_3", placeholder="Apellidos(s)").form-control
+        .form-group
+          label(for="ejemplo_email_3").col-lg-2.control-label Email
+          .col-lg-6
+            input(type="email", id="ejemplo_email_3", placeholder="Email").form-control
+
+        .form-group
+          label(for="ejemplo_password_3").col-lg-2.control-label Contrase&ntilde;a
+          .col-lg-6
+            input(type="password" placeholder="Contraseña" id="ejemplo_password_3").form-control
+        .form-group
+          .col-lg-offset-2.col-lg-6
+            button(type="submit").btn.btn-default Guardar
