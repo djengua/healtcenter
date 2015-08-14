@@ -26,7 +26,7 @@ exports.login = function(req, res, next) {
  */
 
 exports.logout = function(req, res, next) {
-  console.log('logout del usuario: ' + req.session.user.email);
+  console.log(' - - logout del usuario: ' + req.session.user.email);
   req.session.destroy();
   res.redirect('/');
 };

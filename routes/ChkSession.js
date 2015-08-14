@@ -6,7 +6,7 @@ exports.validateSession = function(s, res, route){
     res.send(404);
   }
   else {
-    res.render(route);
+    res.render(route, { userName: s.email });
   }
 
 };
