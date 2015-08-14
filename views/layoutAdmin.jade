@@ -19,11 +19,7 @@ html
     link(rel="stylesheet" href="../css/switchery/switchery.min.css")
 
     script(src="../js/jquery.min.js")
-
-
-
-    script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
-    script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+    
   body.nav-md
     .container.body
       .main_container
@@ -38,7 +34,7 @@ html
             .profile
               .profile_pic: img(src="../images/img.jpg", alt="...").img-circle.profile_img
               .profile_info
-                span Welcome,
+                span Bienvenido,
                 h2=userName
             br/
 
@@ -46,45 +42,41 @@ html
               .menu_section
                 h3 General
                 ul.nav.side-menu
-                  li
+                  li.active
                     a
                       i.fa.fa-home
-                        | Home
+                        | Usuarios
                       span.fa.fa-chevron-down
                     ul(style="display: none").nav.child_menu
+                      li.current-page
+                        a(href="#") Usuarios
                       li
-                        a(href="index.html") Dashboard
+                        a(href="#") Permisos
                       li
-                        a(href="index2.html") Dashboard2
-                      li
-                        a(href="index3.html") Dashboard3
+                        a(href="#") Catalogos
                   li
                     a
                       i.fa.fa-edit
-                        | Forms
+                        | Reportes
                       span.fa.fa-chevron-down
                     ul(style="display: none").nav.child_menu
                       li
-                        a(href="form.html") General Form
+                        a(href="#") Reporte de usuarios
                       li
-                        a(href="form_advanced.html") Advanced Components
+                        a(href="#") Reporte de Pacientes
                       li
-                        a(href="form_validation.html") Form Validation
+                        a(href="#") Reporte de Consultas
                       li
-                        a(href="form_wizards.html") Form Wizard
-                      li
-                        a(href="form_upload.html") Form Upload
-                      li
-                        a(href="form_buttons.html") Form Buttons
+                        a(href="#") Reporte de Citas
 
             .sidebar-footer.hidden-small
-              a(data-toggle="tooltip", data-placement="top", title="Settings")
+              a(data-toggle="tooltip", data-placement="top", title="Configuraciones")
                 span(aria-hidden="true").glyphicon.glyphicon-cog
               a(data-toggle="tooltip" data-placement="top" title="FullScreen")
                 span(aria-hidden="true").glyphicon.glyphicon-fullscreen
               a(data-toggle="tooltip" data-placement="top" title="Lock")
                 span(aria-hidden="true").glyphicon.glyphicon-eye-close
-              a(data-toggle="tooltip" data-placement="top" title="Logout" href="/logout")
+              a(data-toggle="tooltip" data-placement="top" title="Salir" href="/logout")
                 span(aria-hidden="true").glyphicon.glyphicon-off
 
         .top_nav
@@ -101,17 +93,17 @@ html
                     span.fa.fa-angle-down
                   ul.dropdown-menu.dropdown-usermenu.animated.fadeInDown.pull-right
                     li
-                      a(href="#") Profile
+                      a(href="#") Perfil
                     li
                       a(href="#")
                         span.badge.bg-red.pull-right 50%
                         span Settings
                     li
-                      a(href="#") Help
+                      a(href="#") Ayuda
                     li
                       a(href="/logout")
                         i.fa.fa-sign-out.pull-right
-                          | Log Out
+                          | Salir
 
         div(role="main").right_col
           div
@@ -121,12 +113,17 @@ html
           footer
             div
               p.pull-right
-                | Gentelella Alela! a Bootstrap 3 template by
-                a(href="#") Kimlabs. |
-                span.lead
-                  | &nbsp; Healt Center
+                | Healt Center! Todos los derechos reservados 2015
+                a(href="#") djenguaLabs.
             .clearfix
 
+
+
+    script( src="../js/bootstrap.min.js")
+    script(src="../js/chartjs/chart.min.js")
+    script(src="../js/progressbar/bootstrap-progressbar.min.js")
     script(src="../js/nicescroll/jquery.nicescroll.min.js")
     script(src="../js/icheck/icheck.min.js")
-    script(src="../js/custom.js")
+    script(src="../js/custom2.js")
+
+    script(src="../js/graph.js")

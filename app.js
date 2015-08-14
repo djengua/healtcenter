@@ -70,6 +70,10 @@ app.get('/dashboard', routes.dashboard.default );
 
 app.get('/users', routes.user.list);
 
+app.get('/reports', function(req, res){
+  res.render('reports.jade');
+});
+
 /*app.get('/admin', authorize, routes.article.admin);
 app.get('/post', authorize, routes.article.post);
 app.post('/post', authorize, routes.article.postArticle);
